@@ -9,8 +9,18 @@ def encode(password):
         encoded_password += shifted_digit
     return encoded_password
 
-
+def decoder(encoder):
+    my_dict = {"0":7, "1":8, "2":9, "3":0, "4":1, "5":2, "6":3, "7":4, "8":5, "9":6 }
+    result = ""
+    for digit in encoder:
+        my_array = my_dict[digit]
+        result = result + str(my_array) 
+    return(result)
+     
+    
+    
 def main():
+    encoded_password = ""
     while True:
         print("\nMenu")
         print("-------------")
@@ -26,8 +36,12 @@ def main():
             print("Your password has been encoded and stored!")
 
         elif option == "2":
-            pass
             # run decoder here
+            
+            print("The encoded password is " + encoded_password + ", and the original password is " + decoder(encoded_password) + ".")
+            
+            
+            
 
         elif option == "3":
             break
