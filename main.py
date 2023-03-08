@@ -1,6 +1,6 @@
 # Geoffrey Clark's Lab 6 encoder python file
 
-# import Joshua Gallardo's decoder
+# Joshua Gallardo's decoder
 
 def encoder(password):
     encoded_password = ""
