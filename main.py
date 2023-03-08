@@ -1,7 +1,5 @@
 # Geoffrey Clark's Lab 6 encoder python file
 
-# Joshua Gallardo's decoder
-
 def encoder(password):
     encoded_password = ""
     for digit in password:
@@ -10,6 +8,7 @@ def encoder(password):
     return encoded_password
 
 
+# Joshua Gallardo's decoder
 def decoder(encoder):
     my_dict = {"0": 7, "1": 8, "2": 9, "3": 0, "4": 1, "5": 2, "6": 3, "7": 4, "8": 5, "9": 6}
     result = ""
